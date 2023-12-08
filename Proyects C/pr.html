@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mosaico cultural de Colombia</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            background-image: url('R.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        main {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .department {
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 20px;
+            width: 300px;
+            border-radius: 5px;
+            text-align: center;
+            display: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        select {
+            margin: 20px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Diversidad Colombiana</h1>
+    </header>
+
+    <select id="departamentoSelect" onchange="mostrarInfoDepartamento()">
+        <option value="amazonas">Amazonas</option>
+        <option value="antioquia">Antioquia</option>
+        <option value="arauca">Arauca</option>
+        <option value="atlantico">Atlántico</option>
+        <option value="bogota">Bogotá, D.C. (Distrito Capital)</option>
+        <option value="bolivar">Bolívar</option>
+        <option value="boyaca">Boyacá</option>
+        <option value="caldas">Caldas</option>
+        <option value="caqueta">Caquetá</option>
+        <option value="casanare">Casanare</option>
+        <option value="cauca">Cauca</option>
+        <option value="cesar">Cesar</option>
+        <option value="choco">Chocó</option>
+        <option value="cordoba">Córdoba</option>
+        <option value="cundinamarca">Cundinamarca</option>
+        <option value="guainia">Guainía</option>
+        <option value="guaviare">Guaviare</option>
+        <option value="huila">Huila</option>
+        <option value="laguajira">La Guajira</option>
+        <option value="magdalena">Magdalena</option>
+        <option value="meta">Meta</option>
+        <option value="narino">Nariño</option>
+        <option value="nortedesantander">Norte de Santander</option>
+        <option value="putumayo">Putumayo</option>
+        <option value="quindio">Quindío</option>
+        <option value="risaralda">Risaralda</option>
+        <option value="sanandresyprovidencia">San Andrés y Providencia</option>
+        <option value="santander">Santander</option>
+        <option value="sucre">Sucre</option>
+        <option value="tolima">Tolima</option>
+        <option value="valledelcauca">Valle del Cauca</option>
+        <option value="vaupes">Vaupés</option>
+        <option value="vichada">Vichada</option>
+    </select>
+
+    <main>
+        <div id="amazonas" class="department">
+            <h2>Amazonas</h2>
+            <p>Características: Selva amazónica, ríos caudalosos, gran biodiversidad.</p>
+            <p>Diversidad Cultural y Tradiciones: Amazonas alberga diversas comunidades indígenas, cada una con sus propias tradiciones y rituales vinculados a la naturaleza. Las celebraciones reflejan la conexión profunda con el entorno natural.</p>
+            <p>Destacan por: Su contribución a la diversidad biológica, ecosistemas únicos y la preservación de las tradiciones indígenas.</p>
+        </div>
+        
+        <div id="antioquia" class="department">
+            <h2>Antioquia</h2>
+            <p>Características: Montañas andinas, ríos, reconocido por su producción de café.</p>
+            <p>Diversidad Cultural y Tradiciones: Antioquia celebra su diversidad cultural con festivales que destacan la música, la danza y las artes. La tradición cafetera se refleja en la cultura local y la hospitalidad.</p>
+            <p>Destacan por: Paisajes montañosos, rica tradición cafetera y diversidad geográfica.</p>
+        </div>
+        
+        <div id="arauca" class="department">
+            <h2>Arauca</h2>
+            <p>Características: Llanos orientales, industria petrolera, rica cultura llanera.</p>
+            <p>Diversidad Cultural y Tradiciones: Arauca mantiene viva la cultura llanera con eventos que resaltan la música, el joropo y la gastronomía local. La industria petrolera ha influenciado la economía y el desarrollo de la región.</p>
+            <p>Destacan por: Su contribución a la producción de petróleo y su folclore llanero.</p>
+        </div>
+        
+        <div id="atlantico" class="department">
+            <h2>Atlántico</h2>
+            <p>Características: Costa caribeña, activo comercio, diversidad cultural.</p>
+            <p>Diversidad Cultural y Tradiciones: Atlántico se enorgullece de su mezcla cultural, influenciada por su ubicación costera y el comercio activo. Las festividades reflejan la vitalidad y diversidad de la región.</p>
+            <p>Destacan por: Su ubicación estratégica en la costa caribeña y su vitalidad cultural.</p>
+        </div>
+        
+        <div id="bogota" class="department">
+            <h2>Bogotá, D.C. (Distrito Capital)</h2>
+            <p>Características: Capital del país, rica vida cultural, vida urbana vibrante.</p>
+            <p>Diversidad Cultural y Tradiciones: Bogotá, como capital, es un crisol de culturas. La ciudad alberga museos, teatros y festivales que celebran la diversidad cultural. La vida urbana se mezcla con tradiciones modernas y antiguas.</p>
+            <p>Destacan por: Ser el centro político, cultural y económico de Colombia.</p>
+        </div>
+        
+        <div id="bolivar" class="department">
+            <h2>Bolívar</h2>
+            <p>Características: Cartagena, historia colonial, hermosas playas.</p>
+            <p>Diversidad Cultural y Tradiciones: Bolívar conserva su rica historia colonial a través de eventos, festivales y arquitectura que rememoran el pasado. La influencia africana se refleja en la música y la danza.</p>
+            <p>Destacan por: Su rica historia colonial, arquitectura y atractivas playas caribeñas.</p>
+        </div>
+        
+        <div id="boyaca" class="department">
+            <h2>Boyacá</h2>
+            <p>Características: Paisaje montañoso, historia colonial, arquitectura tradicional.</p>
+            <p>Diversidad Cultural y Tradiciones: Boyacá mantiene viva su herencia colonial a través de festivales que destacan la música, danza y gastronomía tradicional. La arquitectura refleja la riqueza histórica de la región.</p>
+            <p>Destacan por: Su rica historia colonial, arquitectura tradicional y paisajes montañosos.</p>
+        </div>
+        
+        <div id="caldas" class="department">
+            <h2>Caldas</h2>
+            <p>Características: Paisaje montañoso, aguas termales, producción de café.</p>
+            <p>Diversidad Cultural y Tradiciones: Caldas celebra su identidad cultural a través de eventos que resaltan la música, la danza y la tradición cafetera. Las aguas termales son parte integral de la experiencia.</p>
+            <p>Destacan por: Sus paisajes montañosos, aguas termales y contribución a la industria cafetera.</p>
+        </div>
+        
+        <div id="caqueta" class="department">
+            <h2>Caquetá</h2>
+            <p>Características: Selva amazónica, gran biodiversidad, ríos majestuosos.</p>
+            <p>Diversidad Cultural y Tradiciones: Caquetá celebra la diversidad de su selva amazónica a través de festivales que honran la naturaleza. Las comunidades indígenas y locales tienen rituales vinculados a la biodiversidad.</p>
+            <p>Destacan por: Su contribución a la diversidad biológica y paisajes selváticos impresionantes.</p>
+        </div>
+        
+        <div id="casanare" class="department">
+            <h2>Casanare</h2>
+            <p>Características: Llanos orientales, arraigada cultura llanera, ganadería extensiva.</p>
+            <p>Diversidad Cultural y Tradiciones: Casanare mantiene viva la cultura llanera con eventos que resaltan la música, el baile y las tradiciones ganaderas. La vida en los vastos llanos es parte fundamental de la identidad local.</p>
+            <p>Destacan por: Su cultura llanera, vastos llanos y contribución a la ganadería extensiva.</p>
+        </div>
+        
+        <div id="cesar" class="department">
+            <h2>Cesar</h2>
+            <p>Características: Agricultura, ganadería, cultura vallenata.</p>
+            <p>Tradiciones y Culturas: Cesar se destaca por ser cuna de la música vallenata, un género que fusiona ritmos indígenas, africanos y europeos. Sus festivales anuales celebran esta rica tradición musical.</p>
+            <p>Destacan por: La influencia cultural de la región en la música colombiana y la preservación de las tradiciones vallenatas.</p>
+        </div>
+        
+        <div id="choco" class="department">
+            <h2>Chocó</h2>
+            <p>Características: Selva, costa pacífica, biodiversidad.</p>
+            <p>Tradiciones y Culturas: El Chocó es hogar de comunidades afrodescendientes que han mantenido sus tradiciones ancestrales. La música y la danza reflejan la conexión profunda con la naturaleza.</p>
+            <p>Destacan por: Celebraciones vibrantes que mezclan elementos africanos y autóctonos, resaltando la diversidad cultural.</p>
+        </div>
+        
+        <div id="cordoba" class="department">
+            <h2>Córdoba</h2>
+            <p>Características: Costa caribeña, ganadería, cultura.</p>
+            <p>Tradiciones y Culturas: Córdoba es conocida por sus festivales coloridos que fusionan influencias indígenas, africanas y europeas. La danza y la música son expresiones artísticas que reflejan la riqueza cultural de la región.</p>
+            <p>Destacan por: La diversidad de tradiciones que coexisten, creando una cultura única en la región caribeña.</p>
+        </div>
+        
+        <div id="cundinamarca" class="department">
+            <h2>Cundinamarca</h2>
+            <p>Características: Región andina, agricultura, Bogotá.</p>
+            <p>Tradiciones y Culturas: Cundinamarca alberga una mezcla de tradiciones indígenas y coloniales. La capital, Bogotá, es un crisol cultural con museos, teatros y festivales que representan la diversidad del país.</p>
+            <p>Destacan por: La influencia de la historia precolombina y la coexistencia de tradiciones ancestrales con la modernidad.</p>
+        </div>
+        
+        <div id="guainia" class="department">
+            <h2>Guainía</h2>
+            <p>Características: Selva amazónica, ríos, biodiversidad.</p>
+            <p>Tradiciones y Culturas: La población indígena en Guainía mantiene fuertes lazos con la naturaleza. Rituales y prácticas ancestrales se llevan a cabo en armonía con el entorno amazónico.</p>
+            <p>Destacan por: La preservación de conocimientos tradicionales y la convivencia con la biodiversidad única de la región.</p>
+        </div>
+        <div id="guaviare" class="department">
+            <h2>Guaviare</h2>
+            <p>Características: Llanos orientales, ríos, biodiversidad.</p>
+            <p>Diversidad Cultural y Tradiciones: Guaviare se destaca por la diversidad cultural de sus comunidades indígenas y la preservación de tradiciones ancestrales.</p>
+            <p>Destacan por: Su paisaje llanero, ríos pintorescos y una rica biodiversidad.</p>
+        </div>
+        
+        <div id="huila" class="department">
+            <h2>Huila</h2>
+            <p>Características: Paisaje montañoso, Neiva, agricultura.</p>
+            <p>Diversidad Cultural y Tradiciones: Huila es conocido por la riqueza de sus expresiones artísticas y la celebración de festivales culturales que resaltan la identidad regional.</p>
+            <p>Destacan por: Sus hermosos paisajes montañosos, la ciudad de Neiva y una próspera industria agrícola.</p>
+        </div>
+        
+        <div id="laguajira" class="department">
+            <h2>La Guajira</h2>
+            <p>Características: Desierto, costa caribeña, cultura wayuu.</p>
+            <p>Diversidad Cultural y Tradiciones: La Guajira es hogar de la comunidad indígena wayuu, conocida por sus coloridas artesanías y la celebración de rituales ancestrales.</p>
+            <p>Destacan por: Su impresionante desierto, la costa caribeña y la rica cultura de la etnia wayuu.</p>
+        </div>
+        
+        <div id="magdalena" class="department">
+            <h2>Magdalena</h2>
+            <p>Características: Costa caribeña, ríos, cultura.</p>
+            <p>Diversidad Cultural y Tradiciones: Magdalena destaca por su herencia afrocaribeña, expresada en la música, la danza y las festividades que celebran la diversidad cultural.</p>
+            <p>Destacan por: Su costa caribeña, ríos navegables y su vibrante escena cultural.</p>
+        </div>
+        
+        <div id="meta" class="department">
+            <h2>Meta</h2>
+            <p>Características: Llanos orientales, cultura llanera, agricultura.</p>
+            <p>Diversidad Cultural y Tradiciones: Meta es reconocido por su arraigada cultura llanera, expresada en música, danzas y festivales que resaltan la vida de los llanos.</p>
+            <p>Destacan por: Los vastos llanos orientales, la rica cultura llanera y su contribución a la agricultura.</p>
+        </div>
+        
+        <div id="narino" class="department">
+            <h2>Nariño</h2>
+            <p>Características: Región andina, cultura, agricultura.</p>
+            <p>Diversidad Cultural y Tradiciones: Nariño se enorgullece de su rica herencia indígena y mestiza, reflejada en sus festivales tradicionales y manifestaciones artísticas.</p>
+            <p>Destacan por: Su ubicación en la región andina, su rica herencia cultural y la diversidad agrícola.</p>
+        </div>
+        
+        <div id="nortedesantander" class="department">
+            <h2>Norte de Santander</h2>
+            <p>Características: Región andina, cultura, comercio transfronterizo.</p>
+            <p>Diversidad Cultural y Tradiciones: Norte de Santander se caracteriza por su diversidad étnica y cultural, influenciada por su ubicación estratégica en la frontera con Venezuela.</p>
+            <p>Destacan por: Su ubicación en la región andina, su rica cultura y el comercio transfronterizo con Venezuela.</p>
+        </div>
+        
+        <div id="putumayo" class="department">
+            <h2>Putumayo</h2>
+            <p>Características: Selva amazónica, ríos, biodiversidad.</p>
+            <p>Diversidad Cultural y Tradiciones: Putumayo es hogar de diversas comunidades indígenas y afrodescendientes, cuyas tradiciones se reflejan en su arte, música y rituales.</p>
+            <p>Destacan por: Su parte de la selva amazónica, sus ríos y la diversidad biológica única.</p>
+        </div>
+        
+        <div id="quindio" class="department">
+            <h2>Quindío</h2>
+            <p>Características: Paisaje montañoso, Armenia, café.</p>
+            <p>Diversidad Cultural y Tradiciones: Quindío celebra su identidad cultural a través de festivales que destacan la música, la danza y la cultura cafetera.</p>
+            <p>Destacan por: Sus hermosos paisajes montañosos, la ciudad de Armenia y su reconocida producción de café.</p>
+        </div>
+        
+        <div id="risaralda" class="department">
+            <h2>Risaralda</h2>
+            <p>Características: Paisaje montañoso, Pereira, café.</p>
+            <p>Diversidad Cultural y Tradiciones: Risaralda promueve la diversidad cultural a través de eventos que resaltan la música, las artes y la tradición cafetera.</p>
+            <p>Destacan por: Sus paisajes montañosos, la ciudad de Pereira y su contribución a la industria cafetera.</p>
+        </div>
+        
+        <div id="sanandresyprovidencia" class="department">
+            <h2>San Andrés y Providencia</h2>
+            <p>Características: Islas caribeñas, playas, cultura.</p>
+            <p>Diversidad Cultural y Tradiciones: San Andrés y Providencia son ricas en diversidad cultural, influenciadas por las comunidades afrocaribeñas y la mezcla de culturas insulares.</p>
+            <p>Destacan por: Sus hermosas islas caribeñas, playas de aguas cristalinas y su rica cultura caribeña.</p>
+        </div>
+        
+        <div id="santander" class="department">
+            <h2>Santander</h2>
+            <p>Características: Región andina, Bucaramanga, aventura.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Jose Rojas</p>
+    </footer>
+
+    <script>
+       function mostrarInfoDepartamento() {
+    var selectedDepartment = document.getElementById("departamentoSelect").value;
+
+    var departments = document.querySelectorAll('.department');
+    departments.forEach(function (department) {
+        department.style.display = 'none';
+    });
+
+    var selectedElement = document.getElementById(selectedDepartment);
+    selectedElement.style.display = 'block';
+}
+
+    </script>
+
+</body>
+</html>
